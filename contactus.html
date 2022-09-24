@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="lb/css/bootstrap.min.css">
+    <title>contact us</title>
+</head>
+<body>
+    <section id="header">
+        <div class="inner-header">
+        <nav class="navbar sticky navbar-expand-lg navbar-light bg-gray ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="image/logo/logo.png" alt="this is am image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hair Care
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="page2.html">Hair Product  </a></li>
+                    <li><a class="dropdown-item" href="hairbladness.html">Hair Problem </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="home-remedy.html">Home Remedy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page4.html">Equipment </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link " href="mart/shop.html">Shop</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link " href="contactus.html">Contact Us</a>
+                </li>
+              </ul>
+          </div>
+          </div>
+        </nav>
+        </div>
+    </section>
+    <div class="contact-wrap">
+        <div class="contact-in">
+            <h1>Contact Info</h1>
+            <h2><i class="fas fa-phone" aria-hidden="true"></i> Phone</h2>
+            <p>+92301-1234567</p>
+            <br>
+            <h2><i class="fas fa-envelope" aria-hidden="true"></i> Email</h2>
+            <p>divasaloon.@gmail.com</p>
+            <br>
+            <h2><i class="fas fa-map-marker" aria-hidden="true"></i> Address</h2>
+            <p>Aptech garden Center, Karachi, Pakistan</p>
+        </div>
+        <div class="contact-in">
+            <h1>Send a Message</h1>
+            <form onsubmit="sendemail(); reset(); return false;" >
+                <input type="text" id="name" placeholder="Full Name" class="contact-in-input">
+                <input type="text" id="email" placeholder="Email" class="contact-in-input">
+                <input type="text" id="phone" placeholder="Phone No." class="contact-in-input">
+                <textarea  id="message" placeholder="Message" class="contact-in-textarea"></textarea>
+                <input type="submit" value="SUBMIT" class="contact-in-btn">
+            </form>
+        </div>
+        <div class="contact-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9026290900706!2d67.02205231418941!3d24.867174984050667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b1566c46f%3A0x65318f4eb62c7aa8!2sAptech%20Computer%20Education%20Garden%20Center!5e0!3m2!1sen!2s!4v1653082719161!5m2!1sen!2s" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- <foote class="section-p1">
+
+        <div class="col">
+            <img  class="logo" src="logos/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address : </strong> Aptech Garden Center Karachi, Pakistan</p>
+            <p><strong>Phone : </strong> +92301=1234567 / +92300-000000</p>
+            <p><strong>Hours : </strong> 10:00 AM TO 10:00 PM, Mon- Sat </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook-f"></i></i>
+                    <i class="fa fa-instagram"></i></i>
+                    <i class="fa fa-twitter"></i></i>
+                    <i class="fa fa-pinterest-p"></i></i>
+                    <i class="fa fa-youtube"></i></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">view Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <!-- <div class="col install">
+            <h4>Install App</h4>
+            <p>From app  Store or Google Play</p>
+            <div class="row">
+                <img src="images/footer/p.jpg" alt="">
+                <img src="images/footer/p1.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/footer/p2.jpg" alt="">
+        </div> -->
+
+        <!-- <div class="copy-right">
+            <p>© 2022, Team:Faizan/Bhusra/Chakkar Ali - Eproject</p>
+        </div>
+    </foote>
+ 
+   --> -->
+    <script src="lb/js/bootstrap.bundle.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendemail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "faizan2201c@aptechgdn.net",
+    Password : "Faizan0303",
+    To : "faiznniazi@gmail.comS",
+    From : document.getElementById("email").value,
+    Subject : "New Contact From Enquiry",
+    Body : "Name :" + document.getElementById("name").value
+     +"<br>  Email :" + document.getElementById("email").value
+     +"<br> Phone no :" + document.getElementById("phone").value
+     +"<br> Message :" + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+        }
+    </script>
+</body>
+</html>

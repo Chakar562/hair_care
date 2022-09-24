@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+</head>
+
+<body>
+
+    <!-- login page -->
+    <div class="container ">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="tittle">Login</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="user" required placeholder="Username">
+                </div>
+                <br>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="pass" required placeholder="Password">
+                </div>
+                <button type="submit" value="login" class="btn" onclick="myfun()" > Sign in</button>
+                <p class="social-text"> Or sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have  an account? <a href="#" id="sign-up-btn2"> Sign up</a></p>
+            </form>
+
+            <!-- sign up page -->
+            <form action="" class="sign-up-form">
+                <h2 class="tittle">Sign Up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="user" id="username" required placeholder="Username">
+                </div>
+                <br>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" class="user" id="email" required placeholder="Email">
+                </div>
+                <br>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="pass" id="password" required placeholder="Password">
+                </div>
+               
+                <button type="submit" value="Sign up" class="btn" onclick="myfun2()"> Sign up</button>
+                <p class="social-text"> Or sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class=" fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2"> Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of DIVA Saloon </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa asperiores quas dicta deserunt reprehenderit ratione corrupti id magni quaerat tempora?</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="image" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to DIVA Saloon </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa asperiores quas dicta deserunt reprehenderit ratione corrupti id magni quaerat tempora?</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="image" class="image">
+            </div>
+        </div>
+    </div>    
+<script src="apps.js"></script>
+<script>
+function myfun2(){
+        var uname = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+        
+      
+      
+        localStorage.setItem("username1",uname);
+        localStorage.setItem("email1",email);
+        localStorage.setItem("password1",pass);
+       
+
+    }
+function myfun(){
+    var uservar = document.getElementById("user").value;
+    var passvar = document.getElementById("pass").value;
+    var checkuser = localStorage.getItem("username1");
+    var checkpass = localStorage.getItem("password1");
+    
+    if(uservar == checkuser || passvar == checkpass){
+window.open("login.html");
+    }
+    else{
+        alert("error occured")
+    }
+}
+</script>
+</body>
+
+</html>

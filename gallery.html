@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lb/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="image/logo/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="lb/flickity.css">
+    <title> haircare </title>
+</head>
+<body >
+  <section id="header">
+    <div class="inner-header">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-gray ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="image/logo/logo.png" alt="this is am image"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hair Care
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="shop.html">Hair Product  </a></li>
+                <li><a class="dropdown-item" href="hairgray.html">Hair Problem </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home-remedy.html">Home Remedy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Equipment </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+      </div>
+      </div>
+    </nav>
+    <section class="gallery">
+    <div class="title-text ">
+      <h1 class="gallery-title"> Gallery  </h1>
+    </div>
+    <div class="full-img" id="fullImgBox">
+      <img src="image/gallery/g2.jpeg" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="image/gallery/g2.jpeg"  onclick="openFullImg(this.src)" >
+      <img src="image/gallery/g3.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g4.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g5.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g6.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g7.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g8.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g9.jpeg"  onclick="openFullImg(this.src)">
+      <img src="image/gallery/g10.jpeg"  onclick="openFullImg(this.src)">
+      
+    </div>
+    </div>
+  </section>
+  </section>
+  <section id="footer">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Home Remedy</a></li>
+              <li><a href="#">Equipment</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#">+92301234567</a></li>
+              <li><a href="#">divasaloon@gmail.com</a></li>
+              <li><a href="#">aptech garden west saddar, Karachi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li><a href="#">Mon-Thus 9:00AM To 11:00PM</a></li>
+              <li><a href="#">Fri 9:00AM To 12:00PM & 3:00PM To 11:00PM</a></li>
+              <li><a href="#">Sat-Sun : OFF</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-link">
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+  
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+ <script src="lb/jquery-3.6.0.min.js"></script>
+      <script src="lb/js/bootstrap.bundle.js"></script>
+      <script src="js/app.js"></script>
+      <script src="lb/flickity.pkgd.min.js"></script>
+    </body>
+  </html>
